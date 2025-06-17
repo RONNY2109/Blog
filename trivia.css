@@ -1,0 +1,90 @@
+
+body {
+  font-size: large;
+   padding: 0;
+   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   width: 100vw;
+   height: 100vh;
+   font-family: "Montserrat Alternates", sans-serif;
+  background-image: url("Blog\ Automovilismo/portada.jpg");
+  background-attachment: fixed;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.questionFrame{
+    justify-items: center;
+   background: rgba(0, 0, 0, 0.543);
+   width: 400px;
+   border-radius: 20px;
+   
+}
+.questionFrame, .question{
+    color: #fff;
+}
+.capa {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.543);
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 3px solid #000000de;
+    color: #fff;
+    text-decoration: none;
+    background: #000000de;
+    border-radius: 2rem;
+    
+    
+}
+.btn-s{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 10px 55px;
+    border: 3px solid #000000de;
+    color: #fff;
+    text-decoration: none;
+    background: #000000de;
+    border-radius: 2rem;
+    
+    
+}
+
+.btn-s:hover{
+    background: none;
+}
+
+.contain{
+    gap: 10px;
+    font-size: 13.3333px;
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+}
+
+.btn:hover{
+    background: none;
+}
+
+.btn-home{
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+}
+.btn-home{
+    margin: 0 10px;
+}
