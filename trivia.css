@@ -131,8 +131,13 @@ h2 {
 @media (max-width: 600px) {
   .btn-atras {
     top: 15px;
-    right: 15px;
+    left: 20px;
     padding: 8px 12px;
     font-size: 14px;
+  }
+
+  .questionFrame {
+    width: 90%; /* Ajusta el ancho para pantallas pequeñas */
+    padding: 10px; /* Espaciado interno */
   }
 }
