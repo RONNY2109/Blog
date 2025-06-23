@@ -1,31 +1,37 @@
-
 body {
-  font-size: large;
-   padding: 0;
-   margin: 0;
+  text-align: justify;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-   width: 100vw;
-   height: 100vh;
-   font-family: "Montserrat Alternates", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Montserrat Alternates", sans-serif;
   background-image: url("Blog\ Automovilismo/portada.jpg");
   background-attachment: fixed;
-  background-size: cover; 
-  background-position: center; 
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
-.questionFrame{
-    justify-items: center;
-   background: rgba(0, 0, 0, 0.543);
-   width: 400px;
-   border-radius: 20px;
-   
+h2 {
+  color: #fff;
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 20px;
 }
-.questionFrame, .question{
-    color: #fff;
+
+.questionFrame {
+  justify-items: center;
+  background: rgba(0, 0, 0, 0.543);
+  width: 800px;
+  border-radius: 20px;
+}
+.questionFrame,
+.question {
+  color: #fff;
 }
 .capa {
   position: fixed;
@@ -37,54 +43,96 @@ body {
   left: 0;
 }
 
-.btn{
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    padding: 10px 40px;
-    border: 3px solid #000000de;
-    color: #fff;
-    text-decoration: none;
-    background: #000000de;
-    border-radius: 2rem;
-    
-    
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  padding: 10px 40px;
+  border: 3px solid #000000de;
+  color: #fff;
+  text-decoration: none;
+  background: #000000de;
+  border-radius: 2rem;
 }
-.btn-s{
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    padding: 10px 55px;
-    border: 3px solid #000000de;
-    color: #fff;
-    text-decoration: none;
-    background: #000000de;
-    border-radius: 2rem;
-    
-    
-}
-
-.btn-s:hover{
-    background: none;
+.btn-s {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  padding: 10px 55px;
+  border: 3px solid #000000de;
+  color: #fff;
+  text-decoration: none;
+  background: #000000de;
+  border-radius: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
 }
 
-.contain{
-    gap: 10px;
-    font-size: 13.3333px;
-    display: flex;
-   align-items: center;
-    flex-direction: column;
+.btn-s:hover {
+  background: none;
+  transform: translateY(-1px); /* Un pequeño efecto de "elevación" */
 }
 
-.btn:hover{
-    background: none;
+.contain {
+  gap: 10px;
+  font-size: 13.3333px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.btn-home{
-    display: flex;
-    justify-content: center;
-    gap: 140px;
+.btn:hover {
+  background: none;
 }
-.btn-home{
-    margin: 0 10px;
+
+.btn-home {
+  display: flex;
+  justify-content: center;
+  gap: 140px;
+}
+.btn-home {
+  margin: 0 10px;
+}
+
+.btn-atras {
+  /* 1. Posicionamiento fijo respecto a la ventana de visualización */
+  position: fixed;
+
+  /* 2. Ubicación en la parte superior derecha */
+  top: 76px; /* 20 píxeles desde el borde superior */
+  left: 100px; /* 20 píxeles desde el borde derecho */
+
+  /* 3. Asegurar que esté por encima de cualquier otro contenido */
+  z-index: 1000; /* Un valor alto para asegurar visibilidad */
+
+  /* 4. Estilos visuales del botón */
+  text-decoration: none;
+  border: 3px solid #000000de;
+  background-color: #000000de; /* Un azul agradable */
+  color: white;
+  padding: 10px 15px; /* Espaciado interno */
+
+  border-radius: 2rem; /* Bordes ligeramente redondeados */
+  cursor: pointer; /* Indica que es clickeable */
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave para el hover */
+}
+
+/* Efecto al pasar el ratón por encima (hover) */
+.btn-atras:hover {
+  background: none; /* Un azul más oscuro al pasar el ratón */
+  transform: translateY(-1px); /* Un pequeño efecto de "elevación" */
+}
+
+/* Opcional: Ajustes para pantallas más pequeñas */
+@media (max-width: 600px) {
+  .btn-atras {
+    top: 15px;
+    right: 15px;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
 }

@@ -27,3 +27,5 @@ window.addEventListener("scroll", function () {
     texto.style.opacity = "1"; // Aparece
   }
 });
+
+

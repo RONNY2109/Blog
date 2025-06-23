@@ -1,32 +1,25 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #1f1d1d;
-    
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1f1d1d;
 }
 
-
-
-.title{
-   color: rgb(0, 0, 0);
+.title {
+  color: rgb(0, 0, 0);
 }
 
 .texto {
-   
   position: absolute; /* Mantiene el texto en su lugar */
   top: 350px; /* Ajusta la posición */
   left: 50%;
   transform: translateX(-50%);
   font-size: 50px;
-  
- 
+
   color: white;
   padding: 10px;
   border-radius: 100px;
   transition: opacity 0.5s ease-in-out;
 }
-
-
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap");
 * {
@@ -38,8 +31,8 @@ body{
 body {
   background-image: url("Blog\ Automovilismo/portada.jpg");
   background-attachment: fixed;
-  background-size: cover; 
-  background-position: center; 
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .capa {
@@ -52,12 +45,15 @@ body {
   left: 0;
 }
 /*Estilos para el encabezado*/
- .header {
+.header {
+  box-shadow: black;
+  background: rgba(0, 0, 0, 0.543);
   width: 100%;
   height: 100px;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
 }
 .container {
   width: 90%;
@@ -98,7 +94,7 @@ body {
 .container .menu a:hover {
   border-bottom: 2px solid #c7c7c7;
   padding-bottom: 5px;
-} 
+}
 
 /*Fin de Estilos para el encabezado*/
 
@@ -119,6 +115,7 @@ body {
   position: fixed;
 }
 #btn-menu:checked ~ .container-menu {
+  z-index: 1000;
   position: fixed;
   opacity: 1;
   visibility: visible;
@@ -159,377 +156,454 @@ body {
   color: #fff;
   cursor: pointer;
   font-size: 18px;
-} 
+}
 
-
-
-.padre{
-   
-    font-family: "Montserrat Alternates", sans-serif;
-    font-size: 130%;
-    vertical-align: baseline;
-  
+.padre {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 130%;
+  vertical-align: baseline;
 }
 
 .head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 63px;
-    
-    position: fixed;
-    width: 100%;
-    z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 63px;
 
-
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
-.logo{
-    margin-left: 30px;
-    mix-blend-mode: difference;
+.logo {
+  margin-left: 30px;
+  mix-blend-mode: difference;
 }
 
 .logo a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-    font-size: 20px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 .navbar a {
- display: block;
- padding: 20px 20px;
- color: #fff;
- text-decoration: none;
- text-transform: uppercase;
- font-size: 20px;
-
+  display: block;
+  padding: 20px 20px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
-.navbar a:hover{
-    background: #484848;
+.navbar a:hover {
+  background: #484848;
 }
 
-.titulo{
-    display: flex;
-    justify-content: center;
-    color: white;
-   
-   
-    
-    
+.titulo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: white;
 }
-.name{
-    display: flex;
-    justify-content: center;
-    color: white;
-    text-decoration: none;
-    font-size: 45px;
-    
-    
-    
+.name {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 45px;
 }
 
+.tittle {
+  height: 60vh !important;
 
-.tittle{
-   height: 60vh !important;
-   
-  background-size: cover; 
-  background-position: center; 
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-   
 }
 
-.tittle{
-    display: flex;
-   justify-content: center;
-   align-items: center;
-    gap: 90px;
-    height: 200px;
+.tittle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  height: 200px;
 }
 
-.education{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-   padding: 0px 200px;
-   
-}
- 
-.text{
-    color: #fff;
+.education {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 200px;
 }
 
-.subTitulo{
-    color: #fff;
+.text {
+  text-align: justify;
+  color: #fff;
+}
+.text .img_face {
+  text-align: center;
 }
 
-.tittle-pagina{
-    display: flex;
-    justify-content: center;
+.subTitulo {
+  color: #fff;
 }
 
-.sobre_mi{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 50px 200px;
-    
-
+.tittle-pagina {
+  display: flex;
+  justify-content: center;
+}
+.img_face {
+  display: flex;
+  justify-content: center;
 }
 
-
-.box-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    background:#1f1d1d ;
+.sobre_mi {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 200px;
 }
 
-.box-container .box{
-    height: 11rem;
-    width: 17rem;
-    background: #101010;
-    text-align: center;
-    border-radius: 1rem;
-    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
-    margin: 2rem;
+.box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  background: #1f1d1d;
 }
 
-.box-container .box i{
-    height: 3rem;
-    width: 3rem;
-    line-height: 3rem;
-    text-align: center;
-    border-radius: 50%;
-    color: #fff;
-    background: #000000de;
-    font-size: 2rem;
-    margin: 1rem 0;
-
+.box-container .box {
+  height: 11rem;
+  width: 17rem;
+  background: #101010;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 5rem rgba(0, 0, 0, 0.5);
+  margin: 2rem;
 }
 
-.box-container .box h3{
-    font-size: 20px;
-    color: #fff;
+.box-container .box i {
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #000000de;
+  font-size: 2rem;
+  margin: 1rem 0;
 }
 
-.box-container .box p{
-    padding: 0 15px;
-    font-size: 16px;
+.box-container .box h3 {
+  font-size: 20px;
+  color: #fff;
 }
 
-.blog-img{
-    width: 100%;
-    height: 100%;
-    max-height: 300px;
-    overflow: hidden;
-    display: flex;
-    position: relative;
-    border-radius: 10px;
+.box-container .box p {
+  padding: 0 15px;
+  font-size: 16px;
 }
 
-.blog-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    transition: all ease 0.3s;
-    
-
+.blog-img {
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
 }
 
-img. {
-  width: 300px; /* Tamaño inicial */
-  transition: transform 0.3s ease-in-out;
-}
-
-.blog-img img:hover {
-  transform: scale(1.5); /* Zoom trifásico 🔥 */
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all ease 0.3s;
 }
 
 
- 
 
-.btn{
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 40px;
-    border: 3px solid #000000de;
-    color: #fff;
-    text-decoration: none;
-    background: #000000de;
-    border-radius: 2rem;
-    
-    
-}
-.btn:hover{
-    background: none;
-}
 
-.btn-home{
-    display: flex;
-    justify-content: center;
-    gap: 140px;
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 40px;
+  border: 3px solid #000000de;
+  color: #fff;
+  text-decoration: none;
+  background: #000000de;
+  border-radius: 2rem;
 }
-.btn-home{
-    margin: 0 10px;
+.btn:hover {
+  background: none;
 }
 
-
-.contain{
-    display: flex;
-    justify-content: center;
-    padding: 30px 200px;
+.btn-home {
+  display: flex;
+  justify-content: center;
+  gap: 140px;
 }
-.contain-2{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 50px 200px;
-
+.btn-home {
+  margin: 0 10px;
 }
 
-
-.slider{
-    width: 100vw;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    margin: auto;
-    overflow: hidden;
-    
+.contain {
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 40px 100px;
+}
+.contain-3 {
+  padding: 17px;
+  background: #1010108c;
+  border-radius: 2rem;
+  
+}
+.contain-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 44px 128px;
+  gap: 169px;
+}
+.contain-pilotos {
+  text-align: center;
+  gap: 108px;
+  display: flex;
+  justify-content: center;
+  padding: 60px 450px;
 }
 
-.slider .slider-track{
-    display: flex;
-    justify-content: center;
-      display: flex;
-    width: calc(200px * 6);
-    animation: scroll 10s ease-in-out infinite alternate;
-    -webkit-animation: scroll 10s ease-in-out infinite alternate;
+.contain-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 200px;
+}
+
+.slider {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider .slider-track {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  width: calc(200px * 6);
+  animation: scroll 10s ease-in-out infinite alternate;
+  -webkit-animation: scroll 10s ease-in-out infinite alternate;
 }
 
 .slider-track {
-    mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 10%, rgba(0,0,0,1) 80%, rgba(0,0,0,0));
-    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 10%, rgba(0,0,0,1) 80%, rgba(0,0,0,0));
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
 }
-.slider .slide{
-    width: 200px;
+.slider .slide {
+  width: 200px;
 }
-
-
 
 @keyframes scroll {
-    0% {
-        transform: translateX(250px);
-    }
-    100% {
-        transform: translateX(-250px );
-    }
+  0% {
+    transform: translateX(250px);
+  }
+  100% {
+    transform: translateX(-250px);
+  }
 }
 
-
-.perfil{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-     box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
-    
+.perfil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0.3rem 5rem rgba(0, 0, 0, 0.5);
 }
 
-.projects{
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
+.projects {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
 }
 
-.info{
-   display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 90px;
-    padding: 15px 200px;
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 140px;
+  gap: 50px;
 }
-.perfilGIT{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-     box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
-    
-
+.perfilGIT {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0.3rem 5rem rgba(0, 0, 0, 0.5);
 }
-.decoracion{
-     height: 25vh !important;
-    background-image: url("https://w.wallhaven.cc/full/d6/wallhaven-d6ypdm.jpg");
-    background-attachment: fixed;
-  background-size: cover; 
-  background-position: center; 
+.decoracion {
+  height: 25vh !important;
+  background-image: url("https://w.wallhaven.cc/full/d6/wallhaven-d6ypdm.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-   box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
+  box-shadow: 0 0.3rem 5rem rgba(0, 0, 0, 0.5);
 }
 
 /* Adaptar imágenes de perfil */
-.perfil, .perfilGIT {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 50%;
+.perfil,
+.perfilGIT {
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+  border-radius: 50%;
 }
 
 /* Ajustar el contenedor de proyectos */
 .box-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 /* Estilos responsivos */
 @media screen and (max-width: 768px) {
-    .tittle{
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
+  .tittle {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
 
-    .sobre_mi,.contain-2, .education, .contain {
-        flex-direction: column;
-        padding: 20px;
-    }
+  .sobre_mi,
+  .contain-2,
+  .contain-3,
+  .education,
+  .contain {
+    flex-direction: column;
+    padding: 20px;
+  }
 
-    .box-container {
-        flex-direction: column;
-        align-items: center;
-    }
+  .box-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .btn-home {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-
-    }
-    .head{
-        display: none;
-    }
+  .btn-home {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .head {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .padre {
-        padding: 10px;
-    }
+  .padre {
+    padding: 10px;
+  }
 
-    .tittle h1, .tittle h2 {
-        font-size: 20px;
-        text-align: center;
-    }
+  .tittle h1,
+  .tittle h2 {
+    font-size: 20px;
+    text-align: center;
+  }
 
-    .perfil {
-        max-width: 150px;
-    }
+  .perfil {
+    max-width: 150px;
+  }
 
-    .box-container {
-        gap: 10px;
-    }
+  .box-container {
+    gap: 10px;
+  }
 }
+/* Estilo de imagen que se difuminada */
+
+.img_difuminada {
+  border-radius: 20px;
+  width: 70%; /* O el tamaño que desees */
+  height: auto;
+  display: block; /* Para eliminar cualquier espacio extra debajo de la imagen */
+  transition: filter 0.3s ease-in-out; /* Transición suave para el efecto */
+
+  /* Aplica un difuminado inicial a la imagen */
+  filter: blur(
+    5px
+  ); /* Ajusta el valor en píxeles (px) para controlar la intensidad */
+}
+
+/* Efecto al pasar el cursor (hover) */
+.img_difuminada:hover {
+  filter: blur(
+    0
+  ); /* Al pasar el cursor, el difuminado desaparece, revelando la imagen clara */
+}
+
+/* Opcional: Un efecto opuesto - la imagen es clara y se difumina al pasar el cursor */
+.img_difuminada-inversa {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.3s ease-in-out;
+  filter: blur(0); /* Inicialmente clara */
+}
+
+/* Estilo de imagen que se difuminada_p */
+.img_pilotos-inversa:hover {
+  filter: blur(5px); /* Se difumina al pasar el cursor */
+}
+.img_pilotos {
+  border-radius: 20px;
+  width: 50%; /* O el tamaño que desees */
+  height: auto;
+  display: block; /* Para eliminar cualquier espacio extra debajo de la imagen */
+  transition: filter 0.3s ease-in-out; /* Transición suave para el efecto */
+
+  /* Aplica un difuminado inicial a la imagen */
+  filter: blur(
+    5px
+  ); /* Ajusta el valor en píxeles (px) para controlar la intensidad */
+}
+
+/* Efecto al pasar el cursor (hover) */
+.img_pilotos:hover {
+  filter: blur(
+    0
+  ); /* Al pasar el cursor, el difuminado desaparece, revelando la imagen clara */
+}
+
+/* Opcional: Un efecto opuesto - la imagen es clara y se difumina al pasar el cursor */
+.img_pilotos-inversa {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.3s ease-in-out;
+  filter: blur(0); /* Inicialmente clara */
+}
+
+.img_pilotos-inversa:hover {
+  filter: blur(5px); /* Se difumina al pasar el cursor */
+}
+
+
+
