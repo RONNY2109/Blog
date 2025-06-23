@@ -362,6 +362,12 @@ body {
   border-radius: 2rem;
   
 }
+.contain-4 {
+  padding: 17px;
+  background: #1010108c;
+  border-radius: 2rem;
+  
+}
 .contain-name {
   display: flex;
   justify-content: center;
@@ -485,6 +491,12 @@ body {
   gap: 20px;
   justify-content: center;
 }
+@media  screen and (min-width: 1024px) {
+  .contain-4 {
+    display: none;
+  }
+  
+}
 
 /* Estilos responsivos */
 @media screen and (max-width: 768px) {
@@ -493,10 +505,12 @@ body {
     text-align: center;
     gap: 20px;
   }
+  .contain-3{
+    display: none;
+  }
 
   .sobre_mi,
   .contain-2,
-  .contain-3,
   .education,
   .contain {
     flex-direction: column;
