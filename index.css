@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #1f1d1d;
+  overflow-x: hidden;
+  
 }
 
 .title {
@@ -29,7 +31,7 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
 }
 body {
-  background-image: url("Blog\ Automovilismo/portada.jpg");
+   background-image: url("Blog\ Automovilismo/portada.jpg"); 
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -257,6 +259,7 @@ body {
 .img_face {
   display: flex;
   justify-content: center;
+  padding: 0%;
 }
 
 .sobre_mi {
@@ -466,15 +469,7 @@ body {
   border-radius: 50%;
   box-shadow: 0 0.3rem 5rem rgba(0, 0, 0, 0.5);
 }
-.decoracion {
-  height: 25vh !important;
-  background-image: url("https://w.wallhaven.cc/full/d6/wallhaven-d6ypdm.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: 0 0.3rem 5rem rgba(0, 0, 0, 0.5);
-}
+
 
 /* Adaptar imágenes de perfil */
 .perfil,
@@ -534,10 +529,15 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  .img_face {
+    width: 100%;
+    height: auto;
+  }
   .body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    position: absolute;
   }
   .padre {
     padding: 10px;
